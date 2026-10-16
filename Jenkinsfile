@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent{label 'worker-node'}
     environment {
         DOCKERHUB_CREDENTIALS = credentials('DockerHub')
         IMAGE_NAME = 'theshubhamgour/flask-portfolio'
