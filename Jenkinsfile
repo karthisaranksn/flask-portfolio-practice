@@ -2,13 +2,13 @@ pipeline {
     agent{label 'worker-node'}
     environment {
         DOCKERHUB_CREDENTIALS = credentials('DockerHub')
-        IMAGE_NAME = 'theshubhamgour/flask-portfolio'
+        IMAGE_NAME = 'sarankarthi87/flask-portfolio'
     }
 
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/theshubhamgour/flask-portfolio.git'
+                git 'https://github.com/karthisaranksn/flask-portfolio-practice.git'
             }
         }
 
